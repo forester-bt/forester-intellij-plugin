@@ -6,6 +6,7 @@ fun environment(key: String) = providers.environmentVariable(key)
 
 plugins {
     id("java") // Java support
+    id ("antlr")
     alias(libs.plugins.kotlin) // Kotlin support
     alias(libs.plugins.gradleIntelliJPlugin) // Gradle IntelliJ Plugin
     alias(libs.plugins.changelog) // Gradle Changelog Plugin
@@ -24,6 +25,8 @@ repositories {
 // Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
 dependencies {
 //    implementation(libs.annotations)
+    implementation("org.antlr:antlr4-intellij-adaptor:0.1")
+    antlr("org.antlr:antlr4:4.9.1")
 }
 
 // Set the JVM language level used to build the project. Use Java 11 for 2020.3+, and Java 17 for 2022.2+.
@@ -68,7 +71,11 @@ tasks {
     wrapper {
         gradleVersion = properties("gradleVersion").get()
     }
-
+    generateGrammarSource {
+        arguments = arguments.plus("-package")
+        arguments = arguments.plus("com.github.besok.foresterintellijplugin.gramma")
+        outputDirectory = File(buildDir.toString() + "/generated-src/antlr/main/com/github/besok/foresterintellijplugin/gramma/")
+    }
     patchPluginXml {
         version = properties("pluginVersion")
         sinceBuild = properties("pluginSinceBuild")

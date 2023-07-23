@@ -17,11 +17,11 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
-
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
-
-To keep everything working, do not remove `<!-- ... -->` sections. 
+Forester represents a framework that provides the toolkit to perform the effective task orchestrations. 
+The tasks can be performed synchronously or asynchronously, locally or remotely. 
+Forester takes care of the correct performance and distribution of the tasks. 
+The main concept of the framework is the flow based on the behavior trees 
+it can be effectively used in the game, ai, robotic areas, or anywhere where the workflow engine can be applied.
 <!-- Plugin description end -->
 
 ## Installation

@@ -1,18 +1,27 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.besok.foresterintellijplugin</id>
-    <name>forester-intellij-plugin Template</name>
+    <name>Forester</name>
     <vendor>besok</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <projectListeners>
+        <listener class="com.github.besok.foresterintellijplugin.ProjectOpenedListener"
+                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+    </projectListeners>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.besok.foresterintellijplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <notificationGroup id="FTree notification group"
+                           displayType="BALLOON"
+                           key="ftree-notification-group"/>
+        <fileType name="FTree" implementationClass="com.github.besok.foresterintellijplugin.FTreeLangFileType"
+                  fieldName="INSTANCE"
+                  language="FTree" extensions="tree"/>
+        <colorSettingsPage implementation="com.github.besok.foresterintellijplugin.highlight.FTreeColorSettingsPage"/>
+        <lang.syntaxHighlighterFactory language="FTree"
+                                       implementationClass="com.github.besok.foresterintellijplugin.highlight.FTreeSyntaxHighlighterFactory"/>
+        <lang.ast.factory language="FTree" implementationClass="com.github.besok.foresterintellijplugin.parser.FTreeAstFactory"/>
+        <lang.parserDefinition language="FTree"
+                               implementationClass="com.github.besok.foresterintellijplugin.parser.FTreeParserDefinition"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.besok.foresterintellijplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
