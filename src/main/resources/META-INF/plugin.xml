@@ -23,5 +23,18 @@
         <lang.ast.factory language="FTree" implementationClass="com.github.besok.foresterintellijplugin.parser.FTreeAstFactory"/>
         <lang.parserDefinition language="FTree"
                                implementationClass="com.github.besok.foresterintellijplugin.parser.FTreeParserDefinition"/>
+
+        <lang.foldingBuilder language="FTree"
+                             implementationClass="com.github.besok.foresterintellijplugin.FTreeFoldingBuilder"/>
+        <lang.braceMatcher language="FTree" implementationClass="com.github.besok.foresterintellijplugin.BraceMatcher"/>
+        <lang.commenter language="FTree" implementationClass="com.github.besok.foresterintellijplugin.FTreeCommenter"/>
+        <lang.psiStructureViewFactory language="FTree"
+                                      implementationClass="com.github.besok.foresterintellijplugin.structure.FTreeStructureViewFactory"/>
+        <lang.formatter
+                language="FTree"
+                implementationClass="com.github.besok.foresterintellijplugin.format.FTreeFormattingBuilder"/>
+        <annotator
+                language="FTree"
+                implementationClass="com.github.besok.foresterintellijplugin.highlight.FTreeAnnotator"/>
     </extensions>
 </idea-plugin>

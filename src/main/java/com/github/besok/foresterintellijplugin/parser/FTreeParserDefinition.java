@@ -3,10 +3,7 @@ package com.github.besok.foresterintellijplugin.parser;
 import com.github.besok.foresterintellijplugin.FTreeLanguage;
 import com.github.besok.foresterintellijplugin.gramma.TreeLexer;
 import com.github.besok.foresterintellijplugin.gramma.TreeParser;
-import com.github.besok.foresterintellijplugin.parser.nodes.Call;
-import com.github.besok.foresterintellijplugin.parser.nodes.FTreeFile;
-import com.github.besok.foresterintellijplugin.parser.nodes.ImportRecord;
-import com.github.besok.foresterintellijplugin.parser.nodes.TreeDef;
+import com.github.besok.foresterintellijplugin.parser.nodes.*;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.ParserDefinition;
 import com.intellij.lang.PsiParser;
@@ -74,6 +71,9 @@ public class FTreeParserDefinition implements ParserDefinition {
                 case RULE_importSt -> new ImportRecord(node, elementType);
                 case RULE_definition -> new TreeDef(node, elementType);
                 case RULE_call -> new Call(node, elementType);
+                case RULE_lambda -> new Lambda(node, elementType);
+                case RULE_invocation -> new Invocation(node, elementType);
+                case RULE_arg -> new Arg(node, elementType);
                 default -> new ANTLRPsiNode(node);
             };
         } else {
