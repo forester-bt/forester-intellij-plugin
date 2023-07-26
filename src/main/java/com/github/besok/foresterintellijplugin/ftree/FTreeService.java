@@ -21,6 +21,7 @@ public class FTreeService {
     private static final Logger logger = Logger.getInstance(FTreeService.class.getName());
 
 
+
     public Optional<Version> version() {
         CmdResult execute = execute("f-tree -V");
 
@@ -66,8 +67,6 @@ public class FTreeService {
                 return null;
             }
 
-            // Set the working directory if needed
-            // processBuilder.directory(new File("YOUR_WORKING_DIRECTORY_PATH"));
 
             // Start the process
             Process process = processBuilder.start();

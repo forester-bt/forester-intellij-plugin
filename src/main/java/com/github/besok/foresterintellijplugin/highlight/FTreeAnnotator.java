@@ -11,11 +11,10 @@ import com.intellij.psi.PsiElement;
 
 import java.util.List;
 import java.util.Optional;
-public class FTreeAnnotator implements Annotator {
 
+public class FTreeAnnotator implements Annotator {
     @Override
     public void annotate(final PsiElement element, AnnotationHolder holder) {
-
         if (element instanceof Invocation) {
             var ho = FTreeAstUtils.ast(element).path("/invocation/args");
             if (ho.isEmpty()) {
@@ -24,7 +23,7 @@ public class FTreeAnnotator implements Annotator {
             }
 
             FTreeAstUtils.ast(element).id().ifPresent((id) -> {
-                if(List.of("inverter","force_success","force_fail","repeat","retry","timeout","delay").contains(id.getText())){
+                if (List.of("inverter", "force_success", "force_fail", "repeat", "retry", "timeout", "delay").contains(id.getText())) {
                     holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
                             .range(id.getTextRange()).textAttributes(DefaultLanguageHighlighterColors.CLASS_REFERENCE).create();
                 }
@@ -37,17 +36,9 @@ public class FTreeAnnotator implements Annotator {
             if (type.equals("cond") || type.equals("impl")) {
                 holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
                         .range(typeElem.get().getTextRange()).textAttributes(FTreeSyntaxHighlighterKeys.KEYWORDS[0]).create();
-                FTreeAstUtils.ast(element).id().ifPresent((id) -> {
-                    holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
-                            .range(id.getTextRange()).textAttributes(DefaultLanguageHighlighterColors.FUNCTION_DECLARATION).create();
-                });
+                FTreeAstUtils.ast(element).id().ifPresent((id) -> holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
+                        .range(id.getTextRange()).textAttributes(DefaultLanguageHighlighterColors.FUNCTION_DECLARATION).create());
             }
         }
     }
-
-//     holder.newAnnotation(HighlightSeverity.ERROR, "Unresolved property")
-//            .range(keyRange)
-//                    .highlightType(ProblemHighlightType.LIKE_UNKNOWN_SYMBOL)
-//                    .withFix(new SimpleCreatePropertyQuickFix(key))
-//            .create();
 }
