@@ -5,7 +5,7 @@ import com.intellij.openapi.components.StoredProperty;
 
 public class VisOptions extends RunConfigurationOptions {
 
-     public final StoredProperty<String> root =
+    private final StoredProperty<String> root =
             string("").provideDelegate(this, "root");
 
     public String getRoot() {
@@ -15,7 +15,7 @@ public class VisOptions extends RunConfigurationOptions {
         root.setValue(this,f);
     }
 
-    public final StoredProperty<String> file =
+    private final StoredProperty<String> file =
             string("").provideDelegate(this, "file");
 
     public String getFile() {
@@ -25,7 +25,7 @@ public class VisOptions extends RunConfigurationOptions {
         file.setValue(this,f);
     }
 
-    public final StoredProperty<String> tree =
+    private final StoredProperty<String> tree =
             string("").provideDelegate(this, "tree");
 
     public String getTree() {
@@ -35,7 +35,7 @@ public class VisOptions extends RunConfigurationOptions {
         tree.setValue(this,f);
     }
 
-    public final StoredProperty<String> output =
+    private final StoredProperty<String> output =
             string("").provideDelegate(this, "output");
 
     public String getOutput() {
@@ -45,7 +45,7 @@ public class VisOptions extends RunConfigurationOptions {
         output.setValue(this,f);
     }
 
-    public final StoredProperty<Boolean> log =
+    private final StoredProperty<Boolean> log =
             property(true).provideDelegate(this, "log");
 
     public Boolean getLog() {
@@ -55,7 +55,7 @@ public class VisOptions extends RunConfigurationOptions {
         log.setValue(this,f);
     }
 
-    public final StoredProperty<Boolean> fromProject =
+    private final StoredProperty<Boolean> fromProject =
             property(true).provideDelegate(this, "fromProject");
 
     public Boolean getFromProject() {
@@ -64,15 +64,15 @@ public class VisOptions extends RunConfigurationOptions {
     public void setFromProject(boolean f) {
         fromProject.setValue(this,f);
     }
-    public final StoredProperty<Boolean> autodetect =
+    private final StoredProperty<Boolean> autodetect =
             property(true).provideDelegate(this, "autodetect");
-    public Boolean getAutodetect() {
+    public Boolean isAutodetect() {
         return autodetect.getValue(this);
     }
     public void setAutodetect(boolean f) {
         autodetect.setValue(this,f);
     }
-    public final StoredProperty<Boolean> outputFlag =
+    private final StoredProperty<Boolean> outputFlag =
             property(true).provideDelegate(this, "outputFlag");
 
     public Boolean getOutputFlag() {

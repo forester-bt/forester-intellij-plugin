@@ -13,16 +13,16 @@ import javax.swing.*;
 public class VisEditor extends SettingsEditor<VizRun> {
 
 
-    private TextFieldWithBrowseButton rootV;
-    private JCheckBox autodetectCheckBox;
-    private JCheckBox projectRootCheckBox;
-    private TextFieldWithBrowseButton fileV;
-    private JTextField treeV;
-    private JTextField output;
-    private JCheckBox outputFlag;
-    private JCheckBox loggingCheckBox;
+    private final TextFieldWithBrowseButton rootV;
+    private final JCheckBox autodetectCheckBox;
+    private final JCheckBox projectRootCheckBox;
+    private final TextFieldWithBrowseButton fileV;
+    private final JTextField treeV;
+    private final JTextField output;
+    private final JCheckBox outputFlag;
+    private final JCheckBox loggingCheckBox;
 
-    private JPanel myPanel;
+    private final JPanel myPanel;
 
 
     public VisEditor() {
@@ -36,30 +36,23 @@ public class VisEditor extends SettingsEditor<VizRun> {
 
         treeV = new JTextField();
         output = new JTextField();
+
         autodetectCheckBox = new JCheckBox("Autodetect");
         projectRootCheckBox = new JCheckBox("Project Root");
         loggingCheckBox = new JCheckBox();
         outputFlag = new JCheckBox("Main File Name");
 
-        autodetectCheckBox.addChangeListener((l) -> {
-            JCheckBox source = (JCheckBox) l.getSource();
-            treeV.setEnabled(!source.isSelected());
-        });
-        projectRootCheckBox.addChangeListener((l) -> {
-            JCheckBox source = (JCheckBox) l.getSource();
-            rootV.setEnabled(!source.isSelected());
-        });
-        outputFlag.addChangeListener((l) -> {
-            JCheckBox source = (JCheckBox) l.getSource();
-            output.setEnabled(!source.isSelected());
-        });
+
+        autodetectCheckBox.addItemListener((l) -> treeV.setVisible(!treeV.isVisible()));
+        projectRootCheckBox.addItemListener((l) -> rootV.setVisible(!rootV.isVisible()));
+        outputFlag.addItemListener((l) -> output.setVisible(!output.isVisible()));
 
         myPanel = FormBuilder
                 .createFormBuilder()
-                .addLabeledComponent("Root", rootV).addComponentToRightColumn(projectRootCheckBox).addSeparator()
-                .addLabeledComponent("File", fileV).addSeparator()
-                .addLabeledComponent("Tree", treeV).addComponentToRightColumn(autodetectCheckBox).addSeparator()
-                .addLabeledComponent("Output", output).addComponentToRightColumn(outputFlag).addSeparator()
+                .addLabeledComponent("Root folder", projectRootCheckBox).addComponentToRightColumn(rootV).addSeparator()
+                .addLabeledComponent("Main file", fileV).addSeparator()
+                .addLabeledComponent("Main tree", autodetectCheckBox).addComponentToRightColumn(treeV).addSeparator()
+                .addLabeledComponent("Output file", outputFlag).addComponentToRightColumn(output).addSeparator()
                 .addLabeledComponent("Logging", loggingCheckBox)
                 .getPanel();
     }
@@ -71,7 +64,7 @@ public class VisEditor extends SettingsEditor<VizRun> {
         fileV.setText(s.getOptions().getFile());
         treeV.setText(s.getOptions().getTree());
         output.setText(s.getOptions().getOutput());
-        autodetectCheckBox.setSelected(s.getOptions().getAutodetect());
+        autodetectCheckBox.setSelected(s.getOptions().isAutodetect());
         projectRootCheckBox.setSelected(s.getOptions().getFromProject());
         loggingCheckBox.setSelected(s.getOptions().getLog());
         outputFlag.setSelected(s.getOptions().getOutputFlag());
@@ -90,9 +83,12 @@ public class VisEditor extends SettingsEditor<VizRun> {
     }
 
     @Override
-    protected JComponent createEditor() {
+    protected @NotNull JComponent createEditor() {
         return myPanel;
     }
+
+
+
 
 }
 

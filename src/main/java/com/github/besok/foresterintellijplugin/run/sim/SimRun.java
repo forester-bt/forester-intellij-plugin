@@ -21,7 +21,7 @@ public class SimRun extends RunConfigurationBase<SimOptions> {
     }
 
     @Override
-    protected @NotNull SimOptions getOptions() {
+    public @NotNull SimOptions getOptions() {
         return (SimOptions) super.getOptions();
     }
 

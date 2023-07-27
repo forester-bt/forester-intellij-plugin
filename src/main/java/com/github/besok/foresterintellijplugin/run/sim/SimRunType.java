@@ -1,6 +1,8 @@
 package com.github.besok.foresterintellijplugin.run.sim;
 
 import com.github.besok.foresterintellijplugin.FTreeLanguage;
+import com.github.besok.foresterintellijplugin.run.viz.VizRunFactory;
+import com.intellij.execution.configurations.ConfigurationTypeBase;
 import com.intellij.execution.configurations.RunConfiguration;
 import com.intellij.execution.configurations.SimpleConfigurationType;
 import com.intellij.openapi.components.BaseState;
@@ -10,35 +12,22 @@ import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class SimRunType extends SimpleConfigurationType {
+public class SimRunType extends ConfigurationTypeBase {
 
-    static SimRunType INSTANCE = new SimRunType();
-
+    public static SimRunType INSTANCE = new SimRunType();
+    public static final String ID = "FTreeSimRun";
     protected SimRunType() {
-        super("f-tree-sim",
+        super(ID,
                 "F-tree Simulation",
                 "Simulation process of Forester F-tree language",
                 NotNullLazyValue.lazy(() -> FTreeLanguage.ICON_LIGHT));
-    }
-
-    @Override
-    public @NotNull RunConfiguration createTemplateConfiguration(@NotNull Project project) {
-        return new SimRun(project,this,"FTreeSim");
+        addFactory(new SimRunFactory(this));
     }
 
 
-    @Override
-    public @NonNls @Nullable String getHelpTopic() {
-        return super.getHelpTopic();
-    }
 
-    @Override
-    public boolean isManaged() {
-        return super.isManaged();
-    }
 
-    @Override
-    public @Nullable Class<? extends BaseState> getOptionsClass() {
-        return SimOptions.class;
-    }
+
+
+
 }

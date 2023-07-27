@@ -11,9 +11,6 @@ import com.intellij.execution.runners.ExecutionEnvironment;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class VizRunProfileState extends CommandLineState {
 
@@ -33,25 +30,25 @@ public class VizRunProfileState extends CommandLineState {
         var args = new ArrayList<String>();
 
         args.add("f-tree");
-        if (options.log.getValue(options)) {
+        if (options.getLog()) {
             args.add("-d");
         }
         args.add("vis");
-        if (options.fromProject.getValue(options)) {
+        if (options.getFromProject()) {
             args.add("-r" + env.getProject().getBasePath());
         } else {
-            args.add("-r" + options.root.getValue(options));
+            args.add("-r" + options.getRoot());
         }
-        if (options.file.getValue(options).equals("")) {
+        if (options.getFile().equals("")) {
             args.add("-mmain.tree");
         } else {
-            args.add("-m" + options.file.getValue(options));
+            args.add("-m" + options.getFile());
         }
-        if (!options.autodetect.getValue(options)) {
-            args.add("-t"+ options.tree.getValue(options));
+        if (!options.isAutodetect()) {
+            args.add("-t"+ options.getTree());
         }
-        if (!options.outputFlag.getValue(options) ) {
-            args.add("-o"+ options.output.getValue(options));
+        if (!options.getOutputFlag() ) {
+            args.add("-o"+ options.getOutput());
         }
 
 

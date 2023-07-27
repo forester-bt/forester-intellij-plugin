@@ -13,15 +13,15 @@ import javax.swing.*;
 public class SimEditor extends SettingsEditor<SimRun> {
 
 
-    private TextFieldWithBrowseButton rootV;
-    private JCheckBox autodetectCheckBox;
-    private JCheckBox projectRootCheckBox;
-    private TextFieldWithBrowseButton fileV;
-    private JTextField treeV;
-    private TextFieldWithBrowseButton profile;
-    private JCheckBox loggingCheckBox;
+    private final TextFieldWithBrowseButton rootV;
+    private final JCheckBox autodetectCheckBox;
+    private final JCheckBox projectRootCheckBox;
+    private final TextFieldWithBrowseButton fileV;
+    private final JTextField treeV;
+    private final TextFieldWithBrowseButton profile;
+    private final JCheckBox loggingCheckBox;
 
-    private JPanel myPanel;
+    private final JPanel myPanel;
 
 
     public SimEditor() {
@@ -41,21 +41,19 @@ public class SimEditor extends SettingsEditor<SimRun> {
         projectRootCheckBox = new JCheckBox("Project Root");
         loggingCheckBox = new JCheckBox();
 
-        autodetectCheckBox.addChangeListener((l) -> {
-            JCheckBox source = (JCheckBox) l.getSource();
-            treeV.setEnabled(!source.isSelected());
+        autodetectCheckBox.addItemListener((l) -> {
+            treeV.setVisible(!treeV.isVisible());
         });
-        projectRootCheckBox.addChangeListener((l) -> {
-            JCheckBox source = (JCheckBox) l.getSource();
-            rootV.setEnabled(!source.isSelected());
+        projectRootCheckBox.addItemListener((l) -> {
+            rootV.setVisible(!rootV.isVisible());
         });
 
         myPanel = FormBuilder
                 .createFormBuilder()
-                .addLabeledComponent("Profile", profile).addSeparator()
-                .addLabeledComponent("Root", rootV).addComponentToRightColumn(projectRootCheckBox).addSeparator()
-                .addLabeledComponent("File", fileV).addSeparator()
-                .addLabeledComponent("Tree", treeV).addComponentToRightColumn(autodetectCheckBox).addSeparator()
+                .addLabeledComponent("Root folder", projectRootCheckBox).addComponentToRightColumn(rootV).addSeparator()
+                .addLabeledComponent("Main file", fileV).addSeparator()
+                .addLabeledComponent("Main tree", autodetectCheckBox).addComponentToRightColumn(treeV).addSeparator()
+                .addLabeledComponent("Profile config", profile).addSeparator()
                 .addLabeledComponent("Logging", loggingCheckBox)
                 .getPanel();
     }

@@ -36,8 +36,8 @@
         <annotator
                 language="FTree"
                 implementationClass="com.github.besok.foresterintellijplugin.highlight.FTreeAnnotator"/>
-        <configurationType implementation="com.github.besok.foresterintellijplugin.run.viz.VizRunType"/>
         <configurationType implementation="com.github.besok.foresterintellijplugin.run.sim.SimRunType"/>
-        <runLineMarkerContributor language="FTree" implementationClass="com.github.besok.foresterintellijplugin.run.viz.VisRunLineMarker"/>
+        <configurationType implementation="com.github.besok.foresterintellijplugin.run.viz.VizRunType"/>
+        <runLineMarkerContributor language="FTree" implementationClass="com.github.besok.foresterintellijplugin.run.SimRunLineMarker"/>
     </extensions>
 </idea-plugin>

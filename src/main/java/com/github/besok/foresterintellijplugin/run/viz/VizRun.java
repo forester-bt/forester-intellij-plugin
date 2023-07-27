@@ -18,7 +18,7 @@ public class VizRun extends RunConfigurationBase<VisOptions> {
     }
 
     @Override
-    protected @NotNull VisOptions getOptions() {
+    public @NotNull VisOptions getOptions() {
         return (VisOptions) super.getOptions();
     }
 

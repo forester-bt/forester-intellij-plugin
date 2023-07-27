@@ -30,25 +30,24 @@ public class SimRunProfileState extends CommandLineState {
         var args = new ArrayList<String>();
 
         args.add("f-tree");
-        if (options.log.getValue(options)) {
+        if (options.getLog()) {
             args.add("-d");
         }
         args.add("sim");
-        if (options.fromProject.getValue(options)) {
+        if (options.getFromProject()) {
             args.add("-r" + env.getProject().getBasePath());
         } else {
-            args.add("-r" + options.root.getValue(options));
+            args.add("-r" + options.getRoot());
         }
-        if (options.file.getValue(options).equals("")) {
+        if (options.getFile().equals("")) {
             args.add("-mmain.tree");
         } else {
-            args.add("-m" + options.file.getValue(options));
+            args.add("-m" + options.getFile());
         }
-        if (!options.autodetect.getValue(options)) {
-            args.add("-t"+ options.tree.getValue(options));
+        if (!options.getAutodetect()) {
+            args.add("-t" + options.getTree());
         }
-            args.add("-p"+ options.profile.getValue(options));
-
+        args.add("-p" + options.getProfile());
 
 
         GeneralCommandLine commandLine = new GeneralCommandLine(args);
