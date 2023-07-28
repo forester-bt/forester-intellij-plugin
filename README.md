@@ -1,44 +1,92 @@
-# forester-intellij-plugin
+# Forester-IntelliJ Plugin
 
-![Build](https://github.com/besok/forester-intellij-plugin/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `PLUGIN_ID` in the above README badges.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+## Introduction
 
 <!-- Plugin description -->
-Forester represents a framework that provides the toolkit to perform the effective task orchestrations. 
-The tasks can be performed synchronously or asynchronously, locally or remotely. 
-Forester takes care of the correct performance and distribution of the tasks. 
-The main concept of the framework is the flow based on the behavior trees 
-it can be effectively used in the game, ai, robotic areas, or anywhere where the workflow engine can be applied.
+This plugin enriches your development experience by providing seamless task orchestration capabilities,
+allowing you to perform tasks synchronously or asynchronously,
+locally or remotely, all within the familiar IntelliJ environment.
+Whether you are working on game development, artificial intelligence, robotics, or any domain requiring efficient task management,
+the Forester-IntelliJ Plugin is here to simplify your workflow and boost productivity.
 <!-- Plugin description end -->
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Features](#features)
+  - [Syntax Highlighting](#syntax-highlighting)
+  - [Folding](#folding)
+  - [Structure View](#structure-view)
+  - [Task Visualization](#task-visualization)
+  - [Task Simulation](#task-simulation)
+- [Usage](#usage)
+  - [Creating a New Task](#creating-a-new-task)
+  - [Configuring Task Behavior](#configuring-task-behavior)
+  - [Running Task Simulations](#running-task-simulations)
+- [FAQ](#faq)
+- [Support](#support)
+- [Changelog](#changelog)
+- [License](#license)
 
 ## Installation
 
-- Using IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "forester-intellij-plugin"</kbd> >
-  <kbd>Install Plugin</kbd>
-  
-- Manually:
+To install the Forester-IntelliJ Plugin, follow these simple steps:
 
-  Download the [latest release](https://github.com/besok/forester-intellij-plugin/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+1. Open your IntelliJ IDE.
+2. Go to "Settings" or "Preferences" from the main menu.
+3. Choose "Plugins" from the left-hand side menu.
+4. Click on the "Marketplace" or "Browse repositories" button.
+5. Search for "Forester-IntelliJ Plugin."
+6. Click "Install" and restart the IDE to activate the plugin.
 
+## Features
+
+### Syntax Highlighting
+
+The Forester-IntelliJ Plugin includes specialized syntax highlighting, making it easier for you to identify and distinguish Forester-related elements in your code. 
+This feature helps improve code readability and ensures that your tasks are accurately represented.
+
+### Folding
+
+With the folding feature, you can conveniently collapse sections of your behavior trees, making complex task structures more manageable. 
+Folding enhances code organization and enables you to focus on specific parts of the task tree as needed.
+
+### Structure View
+
+The plugin provides an intuitive Structure View that displays the hierarchical organization of your behavior trees. 
+Quickly navigate through the task structure, identify parent-child relationships, and easily access specific sections of your tasks with ease.
+
+### Task Visualization
+
+The Forester-IntelliJ Plugin offers a task to visualize the tree that brings behavior trees to life. 
+Gain valuable insights into your task flows and dependencies through interactive graphical representations. 
+This visual aid fosters a better understanding of your task hierarchy, facilitating effective task organization and management.
+
+### Task Simulation
+
+With the task simulation feature, you can run and test your behavior trees directly within the IntelliJ IDE. 
+Simulate task executions to verify their correctness and efficiency, enabling you to fine-tune your task orchestration process.
+
+## Usage
+
+### Creating a New Task
+
+1. Navigate to the "Edit configurations" menu in your IntelliJ IDE.
+2. Select "New Task" to create a new task.
+
+### Running Simulation and Visualization Task
+
+1. Open the behavior tree you want to simulate.
+2. Click on the "Run Simulation" button to initiate the simulation process (on the gutter on the root tree)
+3. Observe the execution flow and identify any potential issues or optimizations.
+
+
+## License
+
+The plugin is released under the [Apache License, Version 2.0](LICENSE).
 
 ---
-Plugin based on the [IntelliJ Platform Plugin Template][template].
 
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
-[docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
+Please note that the above documentation assumes a basic understanding of behavior trees and task orchestration concepts. 
+The provided documentation is a general template based on the given information and may require further customization 
+to reflect the actual functionalities and usage of the Forester-IntelliJ Plugin.
