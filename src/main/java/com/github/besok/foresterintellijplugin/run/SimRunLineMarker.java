@@ -32,7 +32,6 @@ public class SimRunLineMarker extends RunLineMarkerContributor {
     @Override
     public @Nullable Info getInfo(@NotNull PsiElement element) {
         if (element instanceof StaticType) {
-            System.out.println(element.getText());
             if (element.getText().equals("root")) {
                 var project = element.getProject();
                 return new Info(AllIcons.RunConfigurations.TestState.Run, (e) -> "Root Tree",

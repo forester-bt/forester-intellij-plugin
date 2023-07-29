@@ -1,5 +1,7 @@
 # Forester-IntelliJ Plugin
 
+<iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/22387"></iframe>
+
 ## Introduction
 
 <!-- Plugin description -->
