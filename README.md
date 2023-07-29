@@ -1,10 +1,16 @@
-# Forester-IntelliJ Plugin
+<p align="center">
+    <img width="300" alt="Logo" src="pic/logo.png">
+</p>
+<h1 align="center">Forester IntelliJ Plugin</h1>
 
-<script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
-<script>
-  // Please, replace #yourelement with a real element id on your webpage
-  MarketplaceWidget.setupMarketplaceWidget('card', 22387, "forester");
-</script>
+
+<p>
+  <img width="250" alt="" src="pic/folding_l.png">
+  <img width="250" alt="" src="pic/syntax_d.png">
+  <img width="250" alt="" src="pic/syntax_l.png">
+  <img width="250" alt="" src="pic/run_cfg_d.png">
+</p>
+
 
 ## Introduction
 
@@ -95,3 +101,10 @@ The plugin is released under the [Apache License, Version 2.0](LICENSE).
 Please note that the above documentation assumes a basic understanding of behavior trees and task orchestration concepts. 
 The provided documentation is a general template based on the given information and may require further customization 
 to reflect the actual functionalities and usage of the Forester-IntelliJ Plugin.
+
+---
+
+<script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
+<script>
+  MarketplaceWidget.setupMarketplaceWidget('card', 22387, "forester");
+</script>
