@@ -19,6 +19,7 @@ public class SimEditor extends SettingsEditor<SimRun> {
     private final TextFieldWithBrowseButton fileV;
     private final JTextField treeV;
     private final TextFieldWithBrowseButton profile;
+    private final JCheckBox defProfile;
     private final JCheckBox loggingCheckBox;
 
     private final JPanel myPanel;
@@ -40,6 +41,7 @@ public class SimEditor extends SettingsEditor<SimRun> {
         autodetectCheckBox = new JCheckBox("Autodetect");
         projectRootCheckBox = new JCheckBox("Project Root");
         loggingCheckBox = new JCheckBox();
+        defProfile = new JCheckBox("Default profile");
 
         autodetectCheckBox.addItemListener((l) -> {
             treeV.setVisible(!treeV.isVisible());
@@ -47,13 +49,16 @@ public class SimEditor extends SettingsEditor<SimRun> {
         projectRootCheckBox.addItemListener((l) -> {
             rootV.setVisible(!rootV.isVisible());
         });
+        defProfile.addItemListener((l) -> {
+            profile.setVisible(!profile.isVisible());
+        });
 
         myPanel = FormBuilder
                 .createFormBuilder()
                 .addLabeledComponent("Root folder", projectRootCheckBox).addComponentToRightColumn(rootV).addSeparator()
                 .addLabeledComponent("Main file", fileV).addSeparator()
                 .addLabeledComponent("Main tree", autodetectCheckBox).addComponentToRightColumn(treeV).addSeparator()
-                .addLabeledComponent("Profile config", profile).addSeparator()
+                .addLabeledComponent("Sim profile", defProfile).addComponentToRightColumn( profile).addSeparator()
                 .addLabeledComponent("Logging", loggingCheckBox)
                 .getPanel();
     }
@@ -68,6 +73,7 @@ public class SimEditor extends SettingsEditor<SimRun> {
         autodetectCheckBox.setSelected(s.getOptions().getAutodetect());
         projectRootCheckBox.setSelected(s.getOptions().getFromProject());
         loggingCheckBox.setSelected(s.getOptions().getLog());
+        defProfile.setSelected(s.getOptions().getDefProfile());
     }
 
     @Override
@@ -79,6 +85,7 @@ public class SimEditor extends SettingsEditor<SimRun> {
         s.getOptions().setAutodetect(autodetectCheckBox.isSelected());
         s.getOptions().setLog(loggingCheckBox.isSelected());
         s.getOptions().setFromProject(projectRootCheckBox.isSelected());
+        s.getOptions().setDefProfile(defProfile.isSelected());
     }
 
     @Override

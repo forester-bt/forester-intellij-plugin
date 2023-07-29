@@ -45,6 +45,17 @@ public class SimOptions extends RunConfigurationOptions {
         profile.setValue(this,f);
     }
 
+    private final StoredProperty<Boolean> defProfile =
+            property(true).provideDelegate(this, "defProfile");
+
+    public Boolean getDefProfile() {
+        return defProfile.getValue(this);
+    }
+    public void setDefProfile(boolean f) {
+        defProfile.setValue(this,f);
+    }
+
+
     private final StoredProperty<Boolean> log =
             property(true).provideDelegate(this, "log");
 

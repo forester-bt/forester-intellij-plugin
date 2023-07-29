@@ -74,7 +74,7 @@ public class SimRunLineMarker extends RunLineMarkerContributor {
 
                             }
                         },
-                        new AnAction("Create Simulation") {
+                        new AnAction("Run the Default Simulation") {
 
 
                             @Override
@@ -106,6 +106,9 @@ public class SimRunLineMarker extends RunLineMarkerContributor {
                                                     runC,
                                                     configurationFactory);
                                     RunManager.getInstance(project).addConfiguration(configuration);
+                                    ExecutionUtil.runConfiguration(
+                                            configuration,
+                                            DefaultRunExecutor.getRunExecutorInstance());
                                 });
 
 

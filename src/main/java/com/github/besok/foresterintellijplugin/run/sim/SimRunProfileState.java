@@ -47,7 +47,9 @@ public class SimRunProfileState extends CommandLineState {
         if (!options.getAutodetect()) {
             args.add("-t" + options.getTree());
         }
-        args.add("-p" + options.getProfile());
+        if (!options.getDefProfile()) {
+            args.add("-p" + options.getProfile());
+        }
 
 
         GeneralCommandLine commandLine = new GeneralCommandLine(args);
