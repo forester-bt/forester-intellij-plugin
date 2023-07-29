@@ -104,6 +104,12 @@ mes_type
     ;
 
 tree_type
+    : static_type
+    | id          // ambigulty
+    ;
+
+
+static_type
     : ROOT
     | PARALLEL
     | SEQUENCE
@@ -111,7 +117,6 @@ tree_type
     | RSEQUENCE
     | FALLBACK
     | RFALLBACK
-    | id          // ambigulty
     ;
 
 

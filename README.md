@@ -69,17 +69,16 @@ Simulate task executions to verify their correctness and efficiency, enabling yo
 
 ## Usage
 
-### Creating a New Task
+### Creating a New configuration
 
 1. Navigate to the "Edit configurations" menu in your IntelliJ IDE.
 2. Select "New Task" to create a new task.
+3. Select one to visualize or simulate the tree.
 
 ### Running Simulation and Visualization Task
 
 1. Open the behavior tree you want to simulate.
-2. Click on the "Run Simulation" button to initiate the simulation process (on the gutter on the root tree)
-3. Observe the execution flow and identify any potential issues or optimizations.
-
+2. Click on the root tree gutter on the left side of the record to initiate the simulation or visualization configuration
 
 ## License
 

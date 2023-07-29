@@ -69,6 +69,7 @@ public class FTreeParserDefinition implements ParserDefinition {
             int ruleIndex = ((RuleIElementType) elementType).getRuleIndex();
             return switch (ruleIndex) {
                 case RULE_importSt -> new ImportRecord(node, elementType);
+                case RULE_static_type -> new StaticType(node, elementType);
                 case RULE_definition -> new TreeDef(node, elementType);
                 case RULE_call -> new Call(node, elementType);
                 case RULE_lambda -> new Lambda(node, elementType);

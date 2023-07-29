@@ -3,9 +3,9 @@ package com.github.besok.foresterintellijplugin.ftree;
 import org.jetbrains.annotations.NotNull;
 
 public class Version implements Comparable<Version> {
-    private int major;
-    private int minor;
-    private int extra;
+    private final int major;
+    private final int minor;
+    private final int extra;
 
     public Version(int major, int minor, int extra) {
         this.major = major;

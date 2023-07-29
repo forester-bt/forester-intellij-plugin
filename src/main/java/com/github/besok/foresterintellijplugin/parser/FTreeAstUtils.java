@@ -50,6 +50,7 @@ public class FTreeAstUtils {
         private Optional<PsiElement> elemOpt;
         private PsiElement elem;
 
+
         public FTreeElemHelper(PsiElement element) {
             this.elem = element;
             this.elemOpt =
@@ -57,6 +58,11 @@ public class FTreeAstUtils {
                             .filter(e -> !(e instanceof GhostNode) && !(e instanceof PsiDirectory));
         }
 
+
+        public FTreeElemHelper up(){
+            elemOpt = elemOpt.map(PsiElement::getParent);
+            return this;
+        }
 
         public Collection<? extends PsiElement> path(String path) {
             return elemOpt

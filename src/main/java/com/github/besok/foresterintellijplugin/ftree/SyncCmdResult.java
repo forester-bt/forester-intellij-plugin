@@ -2,7 +2,7 @@ package com.github.besok.foresterintellijplugin.ftree;
 
 import java.util.List;
 
-public class CmdResult {
+public class SyncCmdResult {
     @Override
     public String toString() {
         return "CmdResult{" +
@@ -17,7 +17,7 @@ public class CmdResult {
     private List<String> errorLines;
 
 
-    public CmdResult(int code, List<String> lines, List<String> errorLines) {
+    public SyncCmdResult(int code, List<String> lines, List<String> errorLines) {
         this.code = code;
         this.lines = lines;
         this.errorLines = errorLines;

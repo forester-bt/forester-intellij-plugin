@@ -16,14 +16,13 @@ import java.util.regex.Pattern;
 
 public class FTreeService {
 
-    public static Version VERSION = new Version(0, 1, 4);
+    public static Version VERSION = new Version(0, 1, 6);
 
     private static final Logger logger = Logger.getInstance(FTreeService.class.getName());
 
 
-
     public Optional<Version> version() {
-        CmdResult execute = execute("f-tree -V");
+        SyncCmdResult execute = execute("f-tree -V");
 
         if (execute.getCode() != 0) {
             return Optional.empty();
@@ -48,11 +47,11 @@ public class FTreeService {
         }
     }
 
-    public CmdResult install() {
+    public SyncCmdResult install() {
         return execute("cargo install f-tree");
     }
 
-    private static @NotNull CmdResult execute(String cmd) {
+    private static @NotNull SyncCmdResult execute(String cmd) {
         try {
             ProcessBuilder processBuilder;
 
@@ -64,7 +63,7 @@ public class FTreeService {
                 processBuilder = new ProcessBuilder("sh", "-c", cmd);
             } else {
                 logger.info("Unsupported operating system: " + os);
-                return null;
+                return new SyncCmdResult(-1,new ArrayList<>(),new ArrayList<>());
             }
 
 
@@ -91,11 +90,11 @@ public class FTreeService {
             // Wait for the process to complete and get the exit value
             int exitCode = process.waitFor();
             logger.info("Command exited with code: " + exitCode);
-            return new CmdResult(exitCode, lines, errorLines);
+            return new SyncCmdResult(exitCode, lines, errorLines);
         } catch (IOException | InterruptedException e) {
             logger.info("exception: " + e.getMessage());
         }
-        return new CmdResult(-1, new ArrayList<>(), new ArrayList<>());
+        return new SyncCmdResult(-1, new ArrayList<>(), new ArrayList<>());
     }
 
 }

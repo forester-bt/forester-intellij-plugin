@@ -1,5 +1,7 @@
 package com.github.besok.foresterintellijplugin.run;
 
+import com.github.besok.foresterintellijplugin.parser.FTreeAstUtils;
+import com.github.besok.foresterintellijplugin.parser.nodes.StaticType;
 import com.github.besok.foresterintellijplugin.parser.nodes.TreeDef;
 import com.github.besok.foresterintellijplugin.run.sim.SimOptions;
 import com.github.besok.foresterintellijplugin.run.sim.SimRun;
@@ -26,11 +28,12 @@ import org.jetbrains.annotations.Nullable;
 
 public class SimRunLineMarker extends RunLineMarkerContributor {
 
+
     @Override
     public @Nullable Info getInfo(@NotNull PsiElement element) {
-        if (element instanceof TreeDef) {
-            String type = element.getFirstChild().getText();
-            if (type.equals("root")) {
+        if (element instanceof StaticType) {
+            System.out.println(element.getText());
+            if (element.getText().equals("root")) {
                 var project = element.getProject();
                 return new Info(AllIcons.RunConfigurations.TestState.Run, (e) -> "Root Tree",
                         new AnAction("Visualize the Tree") {
@@ -49,25 +52,26 @@ public class SimRunLineMarker extends RunLineMarkerContributor {
                                 }
                                 VizRunFactory configurationFactory = (VizRunFactory) factories[0];
                                 VizRun runC = (VizRun) configurationFactory.createTemplateConfiguration(project);
+                                FTreeAstUtils.ast(element).up().up().id().ifPresent(id -> {
+                                    String treeName = id.getText();
+                                    String fileName = element.getContainingFile().getName();
 
-                                String treeName = element.getChildren()[1].getText();
-                                String fileName = element.getContainingFile().getName();
+                                    runC.setName("Visualize " + fileName + "#" + treeName);
+                                    VisOptions options = runC.getOptions();
+                                    options.setFile(element.getContainingFile().getVirtualFile().getPath());
+                                    options.setTree(treeName);
+                                    options.setAutodetect(false);
 
+                                    RunnerAndConfigurationSettings configuration = RunManager.getInstance(project)
+                                            .createConfiguration(
+                                                    runC,
+                                                    configurationFactory);
+                                    RunManager.getInstance(project).addConfiguration(configuration);
+                                    ExecutionUtil.runConfiguration(
+                                            configuration,
+                                            DefaultRunExecutor.getRunExecutorInstance());
+                                });
 
-                                runC.setName("Visualize " + fileName + "#" + treeName);
-                                VisOptions options = runC.getOptions();
-                                options.setFile(element.getContainingFile().getVirtualFile().getPath());
-                                options.setTree(treeName);
-                                options.setAutodetect(false);
-
-                                RunnerAndConfigurationSettings configuration = RunManager.getInstance(project)
-                                        .createConfiguration(
-                                                runC,
-                                                configurationFactory);
-                                RunManager.getInstance(project).addConfiguration(configuration);
-                                ExecutionUtil.runConfiguration(
-                                        configuration,
-                                        DefaultRunExecutor.getRunExecutorInstance());
                             }
                         },
                         new AnAction("Create Simulation") {
@@ -88,21 +92,22 @@ public class SimRunLineMarker extends RunLineMarkerContributor {
                                 SimRunFactory configurationFactory = (SimRunFactory) factories[0];
                                 SimRun runC = (SimRun) configurationFactory.createTemplateConfiguration(project);
 
-                                String treeName = element.getChildren()[1].getText();
-                                String fileName = element.getContainingFile().getName();
+                                FTreeAstUtils.ast(element).up().up().id().ifPresent(id -> {
+                                    String treeName = id.getText();
+                                    String fileName = element.getContainingFile().getName();
+                                    runC.setName("Simulation " + fileName + "#" + treeName);
+                                    SimOptions options = runC.getOptions();
+                                    options.setFile(element.getContainingFile().getVirtualFile().getPath());
+                                    options.setTree(treeName);
+                                    options.setAutodetect(false);
 
+                                    RunnerAndConfigurationSettings configuration = RunManager.getInstance(project)
+                                            .createConfiguration(
+                                                    runC,
+                                                    configurationFactory);
+                                    RunManager.getInstance(project).addConfiguration(configuration);
+                                });
 
-                                runC.setName("Simulation " + fileName + "#" + treeName);
-                                SimOptions options = runC.getOptions();
-                                options.setFile(element.getContainingFile().getVirtualFile().getPath());
-                                options.setTree(treeName);
-                                options.setAutodetect(false);
-
-                                RunnerAndConfigurationSettings configuration = RunManager.getInstance(project)
-                                        .createConfiguration(
-                                                runC,
-                                                configurationFactory);
-                                RunManager.getInstance(project).addConfiguration(configuration);
 
                             }
                         });

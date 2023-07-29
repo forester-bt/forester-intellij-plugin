@@ -27,7 +27,7 @@
 */
 lexer grammar TreeLexer;
 
-ROOT: 'ROOT';
+ROOT: 'root';
 PARALLEL : 'parallel';
 
 SEQUENCE : 'sequence';
