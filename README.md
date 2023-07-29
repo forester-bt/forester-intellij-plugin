@@ -1,6 +1,10 @@
 # Forester-IntelliJ Plugin
 
-<iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/22387"></iframe>
+<script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
+<script>
+  // Please, replace #yourelement with a real element id on your webpage
+  MarketplaceWidget.setupMarketplaceWidget('card', 22387, "forester");
+</script>
 
 ## Introduction
 
