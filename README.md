@@ -96,4 +96,4 @@ to reflect the actual functionalities and usage of the Forester-IntelliJ Plugin.
 
 ---
 
-<iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/22387"></iframe>
+[Repository](https://plugins.jetbrains.com/plugin/22387-forester)
