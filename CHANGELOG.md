@@ -1,7 +1,10 @@
-<!-- Keep a Changelog guide -> https://keepachangelog.com -->
-
-# forester-intellij-plugin Changelog
+# Changelog
 
 ## [Unreleased]
+
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+
+- fix bugs with grammar
+- add proper enter handling in formatting
+- fix bugs with highlighting in decorators 
+ 

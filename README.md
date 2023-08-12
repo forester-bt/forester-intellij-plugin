@@ -14,14 +14,6 @@
 
 ## Introduction
 
-<!-- Plugin description -->
-This plugin enriches your development experience by providing seamless task orchestration capabilities,
-allowing you to perform tasks synchronously or asynchronously,
-locally or remotely, all within the familiar IntelliJ environment.
-Whether you are working on game development, artificial intelligence, robotics, or any domain requiring efficient task management,
-the Forester-IntelliJ Plugin is here to simplify your workflow and boost productivity.
-<!-- Plugin description end -->
-
 ## Table of Contents
 
 - [Installation](#installation)

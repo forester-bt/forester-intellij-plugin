@@ -74,7 +74,7 @@ NUMBER  : '-'? INT ('.' [0-9] +)? EXP? ;
 
 Whitespace: [ \t\r\n\u000C]+ -> channel(HIDDEN);
 
-BlockComment :   '/*' .*? '*/' -> channel(HIDDEN) ;
+BlockComment :   '/*' .*? '*/' -> channel(2) ;
 
 LineComment :   '//' ~[\r\n]* -> channel(2) ;
 
@@ -86,3 +86,7 @@ fragment HEX : [0-9a-fA-F] ;
 fragment SAFECODEPOINT : ~ ["\\\u0000-\u001F] ;
 fragment INT : '0' | [1-9] [0-9]* ;
 fragment EXP : [Ee] [+\-]? [0-9]+ ;
+
+ERRCHAR
+	:	.	-> channel(HIDDEN)
+	;

@@ -1,14 +1,79 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.besok.foresterintellijplugin</id>
     <name>Forester</name>
-    <vendor>besok</vendor>
+    <vendor email="zhguchev@gmail.com">Boris Zhguchev aka Besok</vendor>
 
     <depends>com.intellij.modules.platform</depends>
     <projectListeners>
         <listener class="com.github.besok.foresterintellijplugin.ProjectOpenedListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </projectListeners>
+    <description>
+        <![CDATA[
+    <h1>Introduction</h1>
+    <p>
+        The Forester-IntelliJ Plugin, an essential integration that brings the power
+        of <a href="https://besok.github.io/forester/">the Forester framework</a> to your IntelliJ IDE.
+        This plugin enriches your development experience by providing
+        seamless task orchestration capabilities, allowing you to perform tasks synchronously or asynchronously,
+        locally or remotely, all within the familiar IntelliJ environment. Whether you are working on game development,
+        artificial intelligence, robotics, or any domain requiring efficient task management, the Forester-IntelliJ
+        Plugin is here to simplify your workflow and boost productivity.
+    </p>
+    <h2> Features</h1>
+
+    <h3>Syntax Highlighting</h2>
+    <p>
+        The Forester-IntelliJ Plugin includes specialized syntax highlighting, making it easier for you to identify and
+        distinguish Forester-related elements in your code. This feature helps improve code readability and ensures
+        that your tasks are accurately represented.
+    </p>
+
+    <h3>Folding</h2>
+    <p>
+        With the folding feature, you can conveniently collapse sections of your behavior trees, making complex task
+        structures more manageable. Folding enhances code organization and enables you to focus on specific parts of
+        the task tree as needed.
+    </p>
+
+    <h3>Structure View</h2>
+    <p>
+        The plugin provides an intuitive Structure View that displays the hierarchical organization of your behavior
+        trees. Quickly navigate through the task structure, identify parent-child relationships, and easily access
+        specific sections of your tasks with ease.
+    </p>
+
+    <h3>Task Visualization</h2>
+    <p>
+        The Forester-IntelliJ Plugin offers a task to visualize the tree that brings behavior trees to life. Gain
+        valuable insights into your task flows and dependencies through interactive graphical representations. This
+        visual aid fosters a better understanding of your task hierarchy, facilitating effective task organization and
+        management.
+    </p>
+
+    <h3>Task Simulation</h2>
+    <p>
+        With the task simulation feature, you can run and test your behavior trees directly within the IntelliJ IDE.
+        Simulate task executions to verify their correctness and efficiency, enabling you to fine-tune your task
+        orchestration process.
+    </p>
+
+    <h2>Usage</h1>
+
+    <h3>Creating a New configuration</h2>
+    <ol>
+        <li>Navigate to the "Edit configurations" menu in your IntelliJ IDE.</li>
+        <li>Select "New Task" to create a new task.</li>
+        <li>Select one to visualize or simulate the tree.</li>
+    </ol>
+
+    <h3>Running Simulation and Visualization Task</h2>
+    <ol>
+        <li>Open the behavior tree you want to simulate.</li>
+        <li>Click on the root tree gutter on the left side of the record to initiate the simulation or visualization configuration.</li>
+    </ol>
+]]>
+    </description>
 
     <extensions defaultExtensionNs="com.intellij">
         <notificationGroup id="FTree notification group"

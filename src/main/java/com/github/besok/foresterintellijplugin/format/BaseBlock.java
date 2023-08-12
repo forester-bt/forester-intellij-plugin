@@ -8,6 +8,7 @@ import com.intellij.formatting.*;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.TokenType;
 import com.intellij.psi.formatter.common.AbstractBlock;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,5 +61,20 @@ public class BaseBlock extends AbstractBlock {
     @Override
     public boolean isLeaf() {
         return myNode.getFirstChildNode() == null;
+    }
+
+    @Override
+    public @NotNull ChildAttributes getChildAttributes(int newChildIndex) {
+        Indent indent = null;
+        if (myNode.getPsi() instanceof Lambda) {
+            indent= Indent.getNormalIndent();
+        } else if (myNode.getPsi() instanceof Invocation) {
+            indent= Indent.getNormalIndent();
+        } else if (myNode.getPsi() instanceof Arg) {
+            indent= Indent.getNormalIndent();
+        } else {
+            indent= Indent.getAbsoluteNoneIndent();
+        }
+        return new ChildAttributes(indent,null);
     }
 }
