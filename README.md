@@ -96,7 +96,4 @@ to reflect the actual functionalities and usage of the Forester-IntelliJ Plugin.
 
 ---
 
-<script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
-<script>
-  MarketplaceWidget.setupMarketplaceWidget('card', 22387, "forester");
-</script>
+<iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/22387"></iframe>
