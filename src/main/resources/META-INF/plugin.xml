@@ -103,6 +103,7 @@
                 implementationClass="com.github.besok.foresterintellijplugin.highlight.FTreeAnnotator"/>
         <configurationType implementation="com.github.besok.foresterintellijplugin.run.sim.SimRunType"/>
         <configurationType implementation="com.github.besok.foresterintellijplugin.run.viz.VizRunType"/>
+        <configurationType implementation="com.github.besok.foresterintellijplugin.run.nav.Nav2RunType"/>
         <runLineMarkerContributor language="FTree" implementationClass="com.github.besok.foresterintellijplugin.run.SimRunLineMarker"/>
     </extensions>
 </idea-plugin>

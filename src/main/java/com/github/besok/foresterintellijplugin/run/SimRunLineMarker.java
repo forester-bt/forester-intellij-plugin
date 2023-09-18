@@ -3,6 +3,10 @@ package com.github.besok.foresterintellijplugin.run;
 import com.github.besok.foresterintellijplugin.parser.FTreeAstUtils;
 import com.github.besok.foresterintellijplugin.parser.nodes.StaticType;
 import com.github.besok.foresterintellijplugin.parser.nodes.TreeDef;
+import com.github.besok.foresterintellijplugin.run.nav.Nav2Options;
+import com.github.besok.foresterintellijplugin.run.nav.Nav2Run;
+import com.github.besok.foresterintellijplugin.run.nav.Nav2RunFactory;
+import com.github.besok.foresterintellijplugin.run.nav.Nav2RunType;
 import com.github.besok.foresterintellijplugin.run.sim.SimOptions;
 import com.github.besok.foresterintellijplugin.run.sim.SimRun;
 import com.github.besok.foresterintellijplugin.run.sim.SimRunFactory;
@@ -57,6 +61,44 @@ public class SimRunLineMarker extends RunLineMarkerContributor {
 
                                     runC.setName("Visualize " + fileName + "#" + treeName);
                                     VisOptions options = runC.getOptions();
+                                    options.setFile(element.getContainingFile().getVirtualFile().getPath());
+                                    options.setTree(treeName);
+                                    options.setAutodetect(false);
+
+                                    RunnerAndConfigurationSettings configuration = RunManager.getInstance(project)
+                                            .createConfiguration(
+                                                    runC,
+                                                    configurationFactory);
+                                    RunManager.getInstance(project).addConfiguration(configuration);
+                                    ExecutionUtil.runConfiguration(
+                                            configuration,
+                                            DefaultRunExecutor.getRunExecutorInstance());
+                                });
+
+                            }
+                        },
+                        new AnAction("Export to ROS Nav2") {
+
+                            @Override
+                            public void actionPerformed(@NotNull AnActionEvent e) {
+                                ConfigurationType type = ConfigurationTypeUtil.findConfigurationType(Nav2RunType.ID);
+
+                                if (type == null) {
+                                    return;
+                                }
+
+                                ConfigurationFactory[] factories = type.getConfigurationFactories();
+                                if (factories.length == 0) {
+                                    return;
+                                }
+                                Nav2RunFactory configurationFactory = (Nav2RunFactory) factories[0];
+                                Nav2Run runC = (Nav2Run) configurationFactory.createTemplateConfiguration(project);
+                                FTreeAstUtils.ast(element).up().up().id().ifPresent(id -> {
+                                    String treeName = id.getText();
+                                    String fileName = element.getContainingFile().getName();
+
+                                    runC.setName("Export " + fileName + "#" + treeName + " to ROS Nav2");
+                                    Nav2Options options = runC.getOptions();
                                     options.setFile(element.getContainingFile().getVirtualFile().getPath());
                                     options.setTree(treeName);
                                     options.setAutodetect(false);

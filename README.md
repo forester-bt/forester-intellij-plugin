@@ -71,6 +71,10 @@ This visual aid fosters a better understanding of your task hierarchy, facilitat
 With the task simulation feature, you can run and test your behavior trees directly within the IntelliJ IDE. 
 Simulate task executions to verify their correctness and efficiency, enabling you to fine-tune your task orchestration process.
 
+### Export to ROS Nav2
+
+The task allows to export a given tree into ROS Nav2 xml file. 
+
 ## Usage
 
 ### Creating a New configuration
