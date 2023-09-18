@@ -26,7 +26,7 @@ repositories {
 dependencies {
 //    implementation(libs.annotations)
     implementation("org.antlr:antlr4-intellij-adaptor:0.1")
-    antlr("org.antlr:antlr4:4.9.1")
+    antlr("org.antlr:antlr4:4.13.1")
 }
 
 // Set the JVM language level used to build the project. Use Java 11 for 2020.3+, and Java 17 for 2022.2+.
