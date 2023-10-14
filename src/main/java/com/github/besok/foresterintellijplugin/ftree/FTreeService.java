@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 public class FTreeService {
 
-    public static Version VERSION = new Version(0, 2, 0);
+    public static Version VERSION = new Version(0, 2, 4);
 
     private static final Logger logger = Logger.getInstance(FTreeService.class.getName());
 

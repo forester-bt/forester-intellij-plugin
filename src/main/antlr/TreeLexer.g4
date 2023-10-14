@@ -43,6 +43,7 @@ OBJECT_T: 'object';
 STRING_T: 'string';
 BOOL_T: 'bool';
 TREE_T: 'tree';
+ANY_T: 'any';
 IMPORT: 'import';
 
 ID : [-_a-zA-Z]+ (INT | [-_a-zA-Z]+)*  ;

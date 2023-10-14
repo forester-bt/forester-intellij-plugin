@@ -101,6 +101,7 @@ mes_type
     | STRING_T
     | BOOL_T
     | TREE_T
+    | ANY_T
     ;
 
 tree_type
