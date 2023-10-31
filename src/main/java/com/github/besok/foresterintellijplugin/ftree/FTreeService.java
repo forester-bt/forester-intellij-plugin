@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 public class FTreeService {
 
-    public static Version VERSION = new Version(0, 2, 4);
+    public static Version VERSION = new Version(0, 2, 5);
 
     private static final Logger logger = Logger.getInstance(FTreeService.class.getName());
 
@@ -27,7 +27,7 @@ public class FTreeService {
         if (execute.getCode() != 0) {
             return Optional.empty();
         } else {
-            if (execute.getLines().size() > 0) {
+            if (!execute.getLines().isEmpty()) {
                 var line = execute.getLines().get(0);
                 Pattern datePattern = Pattern.compile(".* ([0-9]+)\\.([0-9]+)\\.([0-9]+)");
                 Matcher matcher = datePattern.matcher(line);
@@ -47,9 +47,6 @@ public class FTreeService {
         }
     }
 
-    public SyncCmdResult install() {
-        return execute("cargo install f-tree");
-    }
 
     private static @NotNull SyncCmdResult execute(String cmd) {
         try {

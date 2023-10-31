@@ -13,7 +13,7 @@
     <h1>Introduction</h1>
     <p>
         The Forester-IntelliJ Plugin, an essential integration that brings the power
-        of <a href="https://besok.github.io/forester/">the Forester framework</a> to your IntelliJ IDE.
+        of <a href="https://forester-bt.github.io/forester/">the Forester framework</a> to your IntelliJ IDE.
         This plugin enriches your development experience by providing
         seamless task orchestration capabilities, allowing you to perform tasks synchronously or asynchronously,
         locally or remotely, all within the familiar IntelliJ environment. Whether you are working on game development,
