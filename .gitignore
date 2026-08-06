@@ -3,4 +3,5 @@
 .qodana
 build
 **/gen/**
+.intellijPlatform
 .idea/
