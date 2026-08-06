@@ -1,6 +1,7 @@
 package com.github.besok.foresterintellijplugin.run.nav;
 
 import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory;
+import com.intellij.openapi.fileChooser.TextComponentAccessor;
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SettingsEditor;
 import com.intellij.openapi.ui.TextFieldWithBrowseButton;
@@ -29,10 +30,12 @@ public class Nav2Editor extends SettingsEditor<Nav2Run> {
         rootV = new TextFieldWithBrowseButton();
         fileV = new TextFieldWithBrowseButton();
 
-        rootV.addBrowseFolderListener("Root Folder", null, null,
-                FileChooserDescriptorFactory.createSingleFileDescriptor());
-        fileV.addBrowseFolderListener("Main File", null, null,
-                FileChooserDescriptorFactory.createSingleFileDescriptor());
+        TextFieldWithBrowseButton.addBrowseFolderListener(rootV, null,
+                FileChooserDescriptorFactory.createSingleFileDescriptor(),
+                "Root Folder", null, TextComponentAccessor.TEXT_FIELD_WHOLE_TEXT);
+        TextFieldWithBrowseButton.addBrowseFolderListener(fileV, null,
+                FileChooserDescriptorFactory.createSingleFileDescriptor(),
+                "Main File", null, TextComponentAccessor.TEXT_FIELD_WHOLE_TEXT);
 
         treeV = new JTextField();
         output = new JTextField();
