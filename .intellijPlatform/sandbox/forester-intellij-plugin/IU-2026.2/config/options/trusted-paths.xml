@@ -1,0 +1,10 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/projects/forester/tree/tests" value="true" />
+        <entry key="/tmp/main.tree12173820403463304805" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

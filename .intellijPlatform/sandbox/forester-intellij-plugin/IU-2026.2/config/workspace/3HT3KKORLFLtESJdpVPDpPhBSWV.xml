@@ -1,0 +1,396 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="tests" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="ka6pg7jo8qib">
+      <file>
+        <entry file="file://$PROJECT_DIR$/actions/std_actions.tree" file-id="45098" managing-fs="1785876357640">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"std_actions.tree","foregroundColor":-3025959,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-35,1,10,-38,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,98,111,114,105,115,122,47,112,114,111,106,101,99,116,115,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,46,105,110,116,101,108,108,105,106,80,108,97,116,102,111,114,109,47,115,97,110,100,98,111,120,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,73,85,45,50,48,50,54,46,50,47,112,108,117,103,105,110,115,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,108,105,98,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,45,48,46,48,46,57,46,106,97,114,33,47,77,69,84,65,45,73,78,70,47,112,108,117,103,105,110,73,99,111,110,95,100,97,114,107,46,115,118,103]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/actions/sync_halt/main.tree" file-id="45109" managing-fs="1785876357640">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"main.tree","foregroundColor":-3025959,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-35,1,10,-38,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,98,111,114,105,115,122,47,112,114,111,106,101,99,116,115,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,46,105,110,116,101,108,108,105,106,80,108,97,116,102,111,114,109,47,115,97,110,100,98,111,120,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,73,85,45,50,48,50,54,46,50,47,112,108,117,103,105,110,115,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,108,105,98,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,45,48,46,48,46,57,46,106,97,114,33,47,77,69,84,65,45,73,78,70,47,112,108,117,103,105,110,73,99,111,110,95,100,97,114,107,46,115,118,103]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "SVG": {
+      "usageCount": 1,
+      "lastUsed": 1785878185924
+    },
+    "FTree": {
+      "usageCount": 2,
+      "lastUsed": 1785878172341
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory"><![CDATA[{}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="FTree">
+      <summary usageCount="2" lastUsage="1785878172341" />
+    </language>
+    <language id="SVG">
+      <summary usageCount="1" lastUsage="1785878185924" />
+    </language>
+  </component>
+  <component name="ProjectRoots">
+    <project-root url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/borisz/projects/forester/tree/tests}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/borisz/projects/forester/tree/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/borisz/projects/forester/tree/tests}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/sync_halt}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="tests" />
+            <item name="tests" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="tests" />
+              <item name="dir{file:///home/borisz/projects/forester/tree/tests}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/.idea}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/actions" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="actions" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/builtin" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="builtin" />
+                  <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/builtin}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/builtin_test" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="builtin_test" />
+                  <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/builtin_test}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/lock_unlock" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="lock_unlock" />
+                  <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/lock_unlock}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/mix_test" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="mix_test" />
+                  <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/mix_test}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/remote" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="remote" />
+                  <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/remote}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/simple_http" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="simple_http" />
+                  <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/simple_http}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/sync_halt" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="sync_halt" />
+                  <item name="dir{file:///home/borisz/projects/forester/tree/tests/actions/sync_halt}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/actions/sync_halt/main.svg" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/image.svg" iconPlugin="com.intellij" isLeaf="true" text="main.svg" />
+                    <item name="main.svg" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/actions/sync_halt/main.tree" />
+                      </map>
+                    </attributes>
+                    <data iconPath="/META-INF/pluginIcon_dark.svg" iconPlugin="com.github.besok.foresterintellijplugin" isLeaf="true" text="main.tree" />
+                    <item name="main.tree" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/actions/std_actions.tree" />
+                    </map>
+                  </attributes>
+                  <data iconPath="/META-INF/pluginIcon_dark.svg" iconPlugin="com.github.besok.foresterintellijplugin" isLeaf="true" text="std_actions.tree" />
+                  <item name="std_actions.tree" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/complex" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="complex" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/complex}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/daemons" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="daemons" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/daemons}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/decorators" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="decorators" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/decorators}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/drive_robot" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="drive_robot" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/drive_robot}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flow" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="flow" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/flow}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/ho_tree" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="ho_tree" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/ho_tree}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/import" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="import" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/import}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/params" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="params" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/params}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/plain_project" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="plain_project" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/plain_project}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/ros" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="ros" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/ros}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/simulator" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="simulator" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/simulator}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/tracer" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="tracer" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/tracer}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/trimmer" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="trimmer" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/trimmer}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/units" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="units" />
+                <item name="dir{file:///home/borisz/projects/forester/tree/tests/units}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33035713" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" show_stripe_button="false" weight="0.3305" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.3305" left="0.33035713" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Run</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1326" height="293" key="GridCell.Tab.0.bottom" timestamp="1785878207590">
+      <screen x="0" y="32" width="2514" height="1408" />
+    </state>
+    <state width="1326" height="293" key="GridCell.Tab.0.bottom/0.32.2514.1408@0.32.2514.1408" timestamp="1785878207590" />
+    <state width="1326" height="293" key="GridCell.Tab.0.center" timestamp="1785878207590">
+      <screen x="0" y="32" width="2514" height="1408" />
+    </state>
+    <state width="1326" height="293" key="GridCell.Tab.0.center/0.32.2514.1408@0.32.2514.1408" timestamp="1785878207590" />
+    <state width="1326" height="293" key="GridCell.Tab.0.left" timestamp="1785878207590">
+      <screen x="0" y="32" width="2514" height="1408" />
+    </state>
+    <state width="1326" height="293" key="GridCell.Tab.0.left/0.32.2514.1408@0.32.2514.1408" timestamp="1785878207590" />
+    <state width="1326" height="293" key="GridCell.Tab.0.right" timestamp="1785878207590">
+      <screen x="0" y="32" width="2514" height="1408" />
+    </state>
+    <state width="1326" height="293" key="GridCell.Tab.0.right/0.32.2514.1408@0.32.2514.1408" timestamp="1785878207590" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/actions/std_actions.tree">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/sync_halt/main.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/sync_halt/main.tree">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

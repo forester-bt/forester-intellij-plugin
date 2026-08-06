@@ -29,7 +29,7 @@ import static org.antlr.intellij.adaptor.lexer.PSIElementTypeFactory.defineLangu
 
 public class FTreeParserDefinition implements ParserDefinition {
     public FTreeParserDefinition() {
-        defineLanguageIElementTypes(FTreeLanguage.INSTANCE, TreeLexer.tokenNames, TreeParser.ruleNames);
+        defineLanguageIElementTypes(FTreeLanguage.INSTANCE, TreeLexer.VOCABULARY, TreeParser.ruleNames);
     }
 
     @Override

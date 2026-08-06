@@ -1,0 +1,42 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="/tmp/main.tree12173820403463304805">
+          <value>
+            <RecentProjectMetaInfo frameTitle="main.tree – main.tree" projectWorkspaceId="3HSzjtIzP6kTeMlfXdYM0rO213C">
+              <option name="activationTimestamp" value="1785878163801" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-262.8665.258" />
+              <option name="buildTimestamp" value="1784121780000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <option name="customProjectName" value="main.tree" />
+              <frame x="557" y="236" width="1400" height="1000" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1785876398630" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/forester/tree/tests">
+          <value>
+            <RecentProjectMetaInfo frameTitle="tests – main.tree" opened="true" projectWorkspaceId="3HT3KKORLFLtESJdpVPDpPhBSWV">
+              <option name="activationTimestamp" value="1785878207592" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-262.8665.258" />
+              <option name="buildTimestamp" value="1784121780000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="557" y="236" width="1400" height="1000" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1785878165735" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/projects/forester/tree/tests" />
+  </component>
+</application>

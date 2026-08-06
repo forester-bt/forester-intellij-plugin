@@ -1,0 +1,86 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="main.tree" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="ka6pg7jo8qib" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
+        <entry file="file://$USER_HOME$/projects/forester/tree/tests/daemons/smoke/main.tree" file-id="27" managing-fs="1785876357640" />
+        <tab><![CDATA[{"tabTitle":"main.tree","foregroundColor":-3025959,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-35,1,10,-38,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,98,111,114,105,115,122,47,112,114,111,106,101,99,116,115,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,46,105,110,116,101,108,108,105,106,80,108,97,116,102,111,114,109,47,115,97,110,100,98,111,120,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,73,85,45,50,48,50,54,46,50,47,112,108,117,103,105,110,115,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,47,108,105,98,47,102,111,114,101,115,116,101,114,45,105,110,116,101,108,108,105,106,45,112,108,117,103,105,110,45,48,46,48,46,57,46,106,97,114,33,47,77,69,84,65,45,73,78,70,47,112,108,117,103,105,110,73,99,111,110,95,100,97,114,107,46,115,118,103]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">{
+  &quot;data&quot;: {
+    &quot;FTree&quot;: {
+      &quot;usageCount&quot;: 1,
+      &quot;lastUsed&quot;: 1785876442802
+    }
+  }
+}</component>
+  <component name="IdeDocumentHistory">{}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="FTree">
+      <summary usageCount="1" lastUsage="1785876442803" />
+    </language>
+  </component>
+  <component name="ProjectRoots">
+    <project-root url="file://$USER_HOME$/projects/forester/tree/tests/daemons/smoke/main.tree" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33035713" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights left="0.33035713" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="845" y="472" width="824" height="544" key="IDE.errors.dialog" timestamp="1785876474566">
+      <screen x="0" y="32" width="2514" height="1408" />
+    </state>
+    <state x="845" y="472" width="824" height="544" key="IDE.errors.dialog/0.32.2514.1408@0.32.2514.1408" timestamp="1785876474566" />
+    <state x="605" y="330" key="UniversalFileChooserDialog" timestamp="1785878161597">
+      <screen x="0" y="32" width="2514" height="1408" />
+    </state>
+    <state x="605" y="330" key="UniversalFileChooserDialog/0.32.2514.1408@0.32.2514.1408" timestamp="1785878161597" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/projects/forester/tree/tests/daemons/smoke/main.tree">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
